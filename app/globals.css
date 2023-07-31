@@ -15,5 +15,5 @@ html{
 
 
 .nav-link{
-  @apply active:border-b-[3px] focus:border-b-[3px] hover:border-b-2 border-cyan-400  
+  @apply  flex-1  hover:border-b-[3px] border-cyan-400  transform duration-100 ease-linear
 }
