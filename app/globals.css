@@ -6,14 +6,20 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  /* font-family: 'Encode Sans Expanded', sans-serif; */
+  font-family: var(--font-rubik);
 }
+
 
 html{
   scroll-behavior: smooth;
+
 }
 
+  
+.logo-span{
+  font-family: var(--font-satisfy );
+}
 
 .nav-link{
-  @apply  flex-1  hover:border-b-[3px] border-cyan-400  transform duration-100 ease-linear
+  @apply  flex-1 hover:border-white sm:text-xs  hover:border-b-[3px] border-cyan-400  transform duration-100 ease-linear
 }

@@ -1,20 +1,29 @@
 import AppHeader from '@/components/AppHeader'
 import './globals.css'
 import AppFooter from '@/components/AppFooter'
+import { Rubik } from 'next/font/google'
 
-
+// 
 export const metadata = {
-  title: 'xlBank project',
+  title: 'xlBank',
   description: 'Arik Alexandrov',
 }
 
+const rubik = Rubik({
+  subsets: ['latin'],
+  variable: '--font-rubik',
+})
+
+
+
+
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-        <body >
+    <html lang="en" >
+        <body  className={`${rubik.variable} `}>
           <AppHeader />
           {children}
-          <AppFooter />
+        <AppFooter />
         </body>
     </html>
   )

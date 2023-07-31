@@ -1,5 +1,6 @@
 'use client'
 
+import { headerNavLinks } from '@/data/data'
 import Link from 'next/link'
 
 const SideBar = ({ setIsSideBarShow, isSideBarShow }) => {
@@ -9,19 +10,16 @@ const SideBar = ({ setIsSideBarShow, isSideBarShow }) => {
                         opacity-${isSideBarShow ? '[100%]' : '0'} 
                          top-${isSideBarShow ? '0' : '[-100%]'}
                          `
-            
+
         } >
             <button onClick={() => setIsSideBarShow(false)}>O</button>
             <ul>
-                <Link href='/' className='nav-link'>
-                    <li>credit</li>
-                </Link>
-                <Link href='/' className='nav-link'>
-                    <li>crypto</li>
-                </Link>
-                <Link href='/' className='nav-link' >
-                    <li>records</li>
-                </Link>
+                {headerNavLinks.map(link => (
+                    <Link href={link.linkTo} className='nav-link' key={link.id}
+                    onClick={() => setIsSideBarShow(false)}>
+                        <li>{link.title}</li>
+                    </Link>
+                ))}
             </ul>
         </aside>
     )

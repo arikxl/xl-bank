@@ -1,5 +1,8 @@
 'use client'
 
+import Link from "next/link"
+import Logo from "./Logo"
+
 
 const AppFooter = () => {
 
@@ -8,7 +11,7 @@ const AppFooter = () => {
   }
 
   return (
-    <footer className='bg-slate-800 text-white text-center'>
+    <footer className='bg-slate-800 text-white text-center my-0  w-full'>
       <button onClick={moveUp}>UP</button>
       <div className='w-1/2 sm:w-3/5 mx-auto ' >
         <div className='flex'>
@@ -28,8 +31,10 @@ const AppFooter = () => {
           </div>
         </div>
 
-        <div className='flex flex-col sm:flex-row justify-between'>
-          <div>LOGO</div>
+        <div className='flex flex-col sm:flex-row justify-between items-center'>
+          <Link href="/">
+          <Logo/>
+          </Link>
           <small>all rights...</small>
           <div>
             socail icons
