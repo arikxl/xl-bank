@@ -5,6 +5,7 @@ import { useEffect, useState } from "react"
 import SideBar from "./SideBar"
 import Logo from "./Logo"
 import { headerNavLinks } from "@/data/data"
+import BtnPrm from "./btns/btnLogin/BtnLogin"
 
 
 
@@ -36,11 +37,11 @@ const AppHeader = () => {
   }, [])
 
   return (
-    <header className={` flex sticky  top-0 z-10 h-24 items-center font-bold ease-out transform duration-500
+    <header className={` flex sticky  top-0 z-10 h-12 py-12 items-center font-bold ease-out transform duration-500
             ${isScroll ? ' bg-slate-900 text-cyan-400' : 'text-white bg-transparent'}
     `}>
       {isSideBarShow && (<SideBar setIsSideBarShow={setIsSideBarShow} isSideBarShow={isSideBarShow} />)}
-      <nav className='flex w-4/5 justify-between items-center mx-auto h-full
+      <nav className='flex md:w-4/5 w-11/12 justify-between items-center mx-auto
                     text-lg		'>
         <Link href='/'>
           <Logo />
@@ -54,7 +55,9 @@ const AppHeader = () => {
           ))}
         </ul>
         <Link href='/login'>
-          <button className='hidden sm:block'>login</button>
+          {/* <button className='hidden sm:block'> */}
+            <BtnPrm/>
+          {/* </button> */}
         </Link>
         <button className='sm:hidden' onClick={() => setIsSideBarShow(true)}>
           X

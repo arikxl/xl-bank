@@ -9,9 +9,9 @@ const satisfy = Satisfy({
 
 const Logo = () => {
   return (
-      <h1 className={` font-thin text-4xl logo `}>
+      <h1 className={` font-thin sm:text-4xl text-2xl logo `}>
           XL 
-          <span className={`text-5xl ${satisfy.variable} logo-span`} >
+          <span className={`sm:text-5xl text-3xl ${satisfy.variable} logo-span`} >
                bank
           </span>
       </h1>

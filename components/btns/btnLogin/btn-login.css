@@ -1,0 +1,29 @@
+#BtnLogin {
+  padding: 6px 30px;
+  /* text-transform: uppercase; */
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 400;
+  color: white;
+  text-shadow: none;
+  background: transparent;
+  box-shadow: transparent;
+  border: 1px solid white;
+  transition: 0.5s ease;
+  user-select: none;
+}
+
+#BtnLogin:hover,#BtnLogin:focus {
+  color: #ffffff;
+  background: #22D3EE;
+  border: 1px solid #22D3EE;
+  text-shadow: 0 0 5px #ffffff,
+              0 0 10px #ffffff,
+              0 0 20px #ffffff;
+  box-shadow: 0 0 5px #22D3EE,
+              0 0 20px #22D3EE,
+              0 0 50px #22D3EE,
+              0 0 100px #22D3EE;
+  font-size: 1rem;
+  border-color: transparent;
+}

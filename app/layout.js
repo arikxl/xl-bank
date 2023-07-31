@@ -20,7 +20,7 @@ const rubik = Rubik({
 export default function RootLayout({ children }) {
   return (
     <html lang="en" >
-        <body  className={`${rubik.variable} `}>
+        <body  className={`${rubik.variable}`}>
           <AppHeader />
           {children}
         <AppFooter />

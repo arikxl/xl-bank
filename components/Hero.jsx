@@ -1,3 +1,4 @@
+import BtnPrm from "./btns/btnPrm/BtnPrm"
 
 
 const Hero = () => {
@@ -10,10 +11,11 @@ const Hero = () => {
           src='/assets/videos/bg2.mp4'
         />
       </div>
-      <div className='z-10 bg-lime-100'>
-        <h1 className=''>Welcome to my bank </h1>
-        <p>Sign up and receive 1,000,000 to invest in crypto</p>
-        <button className='btn'>Get Started</button>
+      <div className='z-10  text-center  text-white '>
+        <h1 className=' text-5xl font-bold mb-12'>Welcome to our &#x20BF;ank </h1>
+        <p className='mb-0 text-2xl'>Sign up and receive $1,000,000 to invest in crypto</p>
+        <p className='mb-8 text-2xl'>Design your credit cards and have fun!</p>
+        <BtnPrm/>
       </div>
     </section>
   )
