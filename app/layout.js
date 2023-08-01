@@ -2,6 +2,7 @@ import AppHeader from '@/components/AppHeader'
 import './globals.css'
 import AppFooter from '@/components/AppFooter'
 import { Rubik } from 'next/font/google'
+import HeaderUserStats from '@/components/HeaderUserStats'
 
 // 
 export const metadata = {
@@ -21,9 +22,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" >
         <body  className={`${rubik.variable}`}>
-          <AppHeader />
+        <AppHeader />
           {children}
-        <AppFooter />
+          <AppFooter />
         </body>
     </html>
   )

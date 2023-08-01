@@ -1,7 +1,7 @@
 export const headerNavLinks = [
     {
         id: 11,
-        title: 'Crypto World',
+        title: 'Crypto',
         linkTo:'#crypto'
     },
     {
@@ -11,12 +11,22 @@ export const headerNavLinks = [
     },
     {
         id: 13,
-        title: 'Take a Loan',
+        title: 'Loans',
         linkTo:'#loan'
     },
     {
         id: 14,
-        title: 'About Us',
+        title: 'The Team',
+        linkTo:'#about'
+    },
+    {
+        id: 15,
+        title: 'Shop',
+        linkTo:'#about'
+    },
+    {
+        id: 16,
+        title: 'Dashboard',
         linkTo:'#about'
     },
 ]

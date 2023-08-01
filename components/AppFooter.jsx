@@ -11,7 +11,7 @@ const AppFooter = () => {
   }
 
   return (
-    <footer className='bg-slate-800 text-white text-center my-0  w-full'>
+    <footer className='bg-slate-800 text-white text-center   w-full'>
       <button onClick={moveUp}>UP</button>
       <div className='w-1/2 sm:w-3/5 mx-auto ' >
         <div className='flex'>
