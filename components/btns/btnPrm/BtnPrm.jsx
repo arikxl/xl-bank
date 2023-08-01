@@ -2,7 +2,7 @@ import './btn-prm.css';
 
 const BtnPrm = () => {
   return (
-      <button type="button" className="button mx-0 bg-red-300">
+      <button type="button" className="button mx-0">
           <div className='mx-0'>
               
           <svg viewBox="0 0 16 16" className="bi bi-coin" fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg">

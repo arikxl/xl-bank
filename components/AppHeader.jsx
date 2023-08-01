@@ -7,24 +7,32 @@ import Logo from "./Logo"
 import { headerNavLinks } from "@/data/data"
 import BtnPrm from "./btns/btnLogin/BtnLogin"
 import HeaderUserStats from "./HeaderUserStats"
+import BtnLogin from "./btns/btnLogin/BtnLogin"
 
 
 
-const AppHeader = () => {
+
+
+const AppHeader = ({ showHeader }) => {
 
   const [isSideBarShow, setIsSideBarShow] = useState(false);
   const [isScroll, setIsScroll] = useState(false);
-  const [section, setSection] = useState(0)
+  const [section, setSection] = useState(0);
+
+  const[user] = useState(null)
 
   useEffect(() => {
+
     const changeNav = () => {
       if (window.scrollY > 100) setIsScroll(true);
       else setIsScroll(false)
     }
     window.addEventListener('scroll', changeNav);
-  }, [isScroll])
+  }, [isScroll, showHeader]);
+
 
   useEffect(() => {
+
     const checkScreenHeight = () => {
       // 563
       if (window.scrollY + 100 < window.innerHeight) {
@@ -37,16 +45,23 @@ const AppHeader = () => {
 
   }, [])
 
+
+
+
+
+
   return (
     <>
-      <header className={` flex flex-col sticky  top-0 z-10 h-12 py-12   ease-out transform duration-500
-            ${isScroll ? ' bg-slate-900 text-cyan-400' : 'text-white bg-transparent'}
+      <header className={` flex flex-col    h-12   sticky  top-0 z-50
+            
     `}>
-        <div className={`flex font-bold items-center`}>
+        <div className={`flex font-bold items-center py-2 ease-out transform duration-500
+        ${isScroll || showHeader ? ' bg-slate-900 text-cyan-400' : 'text-white bg-transparent'}
+  
+        `}>
 
           {isSideBarShow && (<SideBar setIsSideBarShow={setIsSideBarShow} isSideBarShow={isSideBarShow} />)}
-          <nav className='flex md:w-4/5 w-11/12 justify-between items-center mx-auto
-                    text-lg		'>
+          <nav className='flex md:w-4/5 w-11/12 justify-between items-center mx-auto text-lg'>
             <Link href='/'>
               <Logo />
             </Link>
@@ -60,7 +75,7 @@ const AppHeader = () => {
             </ul>
             <Link href='/login'>
               {/* <button className='hidden sm:block'> */}
-              <BtnPrm />
+              <BtnLogin />
               {/* </button> */}
             </Link>
             <button className='sm:hidden' onClick={() => setIsSideBarShow(true)}>
@@ -69,7 +84,8 @@ const AppHeader = () => {
 
           </nav >
         </div>
-        <HeaderUserStats />
+        {user && (<HeaderUserStats showHeader={showHeader} isScroll={isScroll} />)}
+     
 
       </header>
 

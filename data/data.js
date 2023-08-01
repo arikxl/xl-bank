@@ -1,12 +1,17 @@
 export const headerNavLinks = [
     {
+        id: 16,
+        title: 'Dashboard',
+        linkTo:'#about'
+    },
+    {
         id: 11,
         title: 'Crypto',
         linkTo:'#crypto'
     },
     {
         id: 12,
-        title: 'Credit Cards',
+        title: 'C.Cards',
         linkTo:'#credit'
     },
     {
@@ -24,9 +29,5 @@ export const headerNavLinks = [
         title: 'Shop',
         linkTo:'#about'
     },
-    {
-        id: 16,
-        title: 'Dashboard',
-        linkTo:'#about'
-    },
+
 ]

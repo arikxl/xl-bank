@@ -1,4 +1,5 @@
 import AboutSection from "@/components/AboutSection";
+import AppHeader from "@/components/AppHeader";
 import CreditHomeSection from "@/components/CreditHomeSection";
 import CryptoHomeSection from "@/components/CryptoHomeSection";
 import HeaderUserStats from "@/components/HeaderUserStats";
@@ -7,6 +8,9 @@ import LoanHomeSection from "@/components/LoanHomeSection";
 
 export default function Home() {
   return (
+    <>
+    {/* <AppHeader /> */}
+
     <main className="">
 
       <Hero />
@@ -15,5 +19,6 @@ export default function Home() {
       <LoanHomeSection />
       <AboutSection/>
     </main>
+    </>
   )
 }
