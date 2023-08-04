@@ -11,8 +11,8 @@ const Hero = () => {
           src='/assets/videos/bg2.mp4'
         />
       </div>
-      <div className='z-10  text-center  text-white mt-10'>
-        <h1 className=' text-5xl font-bold mb-10'>Welcome to our &#x20BF;ank </h1>
+      <div className='z-10  text-center  text-white mt-12'>
+        <h1 className=' text-6xl font-bold mb-10'>Welcome to our &#x20BF;ank </h1>
         <p className='mb-0 text-2xl '>Sign up and receive <strong>$1,000,000</strong> to invest in crypto</p>
         <p className='mb-16 text-2xl'>Design your credit cards and have fun!</p>
         <BtnPrm />

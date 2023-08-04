@@ -25,10 +25,21 @@ html{
 }
 
 .home-section{
-  @apply bg-slate-800 text-white h-[90vh]  items-center flex
+  @apply bg-slate-800 text-white h-[85vh]  items-center flex
 }
 
 .home-section:nth-child(3){
-  @apply bg-[#E5E7EB] text-black h-[90vh] 
+  @apply bg-[#E5E7EB] text-black h-[85vh] items-center flex 
 }
+.home-section:nth-child(3) .switch{
+ @apply flex-row-reverse
+}
+.home-section:nth-child(4) .coll{
+ @apply  py-10
+}
+
+/* .switch:nth-child(2){
+  
+  
+} */
 

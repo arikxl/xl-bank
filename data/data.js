@@ -31,3 +31,30 @@ export const headerNavLinks = [
     },
 
 ]
+
+export const homeSectionsContent = [
+    {
+        id: 3001,
+        img: '/assets/img/data.svg',
+        title: 'Manage your Money',
+        subTitle: 'Controlling your fortune is extremely easy',
+        desc: 'User-friendly interface for smooth asset management. Track crypto investments and monitor account balances, empowering you to make decisions swiftly and efficiently.',
+        btnText:"Let's start"
+    },
+    {
+        id: 3002,
+        img: '/assets/img/bit.svg',
+        title: 'Crypto World',
+        subTitle: 'Access the latest info and start your trading journey',
+        desc: "Buy or sell bitcoin and other cryptocurrencies with confidence on the world's most secure crypto trade app. we are committed to your transactions protection.",
+        btnText:'Invest Today'
+    },
+    {
+        id: 3003,
+        img: '/assets/img/card1.svg',
+        title: 'Fashionable Finances',
+        subTitle: 'Elevate your spending with stylish credit cards',
+        desc: 'Make a statement with elegance designs for your wallet. Be imaginative & unique like a true artist. Like others cards and get ranked for your creative ideas.',
+        btnText:'Express Your Style'
+    },
+]

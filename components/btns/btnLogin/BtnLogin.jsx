@@ -2,7 +2,7 @@ import './btn-login.css';
 
 const BtnLogin = ({ text }) => {
   return (
-    <button id="BtnLogin">
+    <button id="BtnLogin" >
           {text}
       </button>
   )
