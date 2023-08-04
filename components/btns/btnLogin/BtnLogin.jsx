@@ -1,9 +1,9 @@
 import './btn-login.css';
 
-const BtnLogin = () => {
+const BtnLogin = ({ text }) => {
   return (
     <button id="BtnLogin">
-          Login
+          {text}
       </button>
   )
 }

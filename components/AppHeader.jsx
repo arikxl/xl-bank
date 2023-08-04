@@ -19,7 +19,7 @@ const AppHeader = ({ showHeader }) => {
   const [isScroll, setIsScroll] = useState(false);
   const [section, setSection] = useState(0);
 
-  const[user] = useState(null)
+  const[user] = useState(true)
 
   useEffect(() => {
 
@@ -75,7 +75,7 @@ const AppHeader = ({ showHeader }) => {
             </ul>
             <Link href='/login'>
               {/* <button className='hidden sm:block'> */}
-              <BtnLogin />
+              <BtnLogin text='Login'/>
               {/* </button> */}
             </Link>
             <button className='sm:hidden' onClick={() => setIsSideBarShow(true)}>

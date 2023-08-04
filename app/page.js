@@ -1,10 +1,10 @@
-import AboutSection from "@/components/AboutSection";
+import AboutSection from "@/components/HomeSection";
 import AppHeader from "@/components/AppHeader";
 import CreditHomeSection from "@/components/CreditHomeSection";
 import CryptoHomeSection from "@/components/CryptoHomeSection";
 import HeaderUserStats from "@/components/HeaderUserStats";
 import Hero from "@/components/Hero";
-import LoanHomeSection from "@/components/LoanHomeSection";
+import HomeSection from "@/components/HomeSection";
 
 export default function Home() {
   return (
@@ -13,11 +13,14 @@ export default function Home() {
 
     <main className="">
 
-      <Hero />
-      <CryptoHomeSection />
+        <Hero />
+        <HomeSection />
+        <HomeSection />
+        <HomeSection />
+      {/* <CryptoHomeSection />
       <CreditHomeSection />
-      <LoanHomeSection />
-      <AboutSection/>
+      <LoanHomeSection /> */}
+      {/* <AboutSection/> */}
     </main>
     </>
   )

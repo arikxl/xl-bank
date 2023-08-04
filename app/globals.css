@@ -23,3 +23,12 @@ html{
 .nav-link{
   @apply  flex-1 hover:border-white text-sm md:text-base   hover:border-b-[3px] border-cyan-400  transform duration-100 ease-linear
 }
+
+.home-section{
+  @apply bg-slate-800 text-white h-[90vh]  items-center flex
+}
+
+.home-section:nth-child(3){
+  @apply bg-[#E5E7EB] text-black h-[90vh] 
+}
+
