@@ -1,6 +1,5 @@
 'use client'
 
-
 import AppHeader from '@/components/AppHeader'
 import './globals.css'
 import AppFooter from '@/components/AppFooter'
