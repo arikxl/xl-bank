@@ -6,6 +6,7 @@ import Hero from "@/components/Hero";
 import HomeSection from "@/components/HomeSection";
 import { homeSectionsContent } from "@/data/data";
 import LoanHomeSection from "@/components/LoanHomeSection";
+import HomeTeamSection from "@/components/HomeTeamSection";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
           <HomeSection key={sec.id} section={sec} index={index } />
         ))}
         <LoanHomeSection />
+        <HomeTeamSection />
     </main>
     </>
   )

@@ -4,7 +4,7 @@ import Image from "next/image";
 const Loan = ({ loan }) => {
     const { title, img, years, interest } = loan;
     return (
-        <div className='border-2 py-4 	 rounded-lg border-black flex-1 text-center cursor-pointer
+        <div className='border-2 py-4 rounded-lg border-black flex-1 text-center cursor-pointer
          items-center hover:scale-105 transform duration-200 hover:border-cyan-400  '>
             <h2 className='text-3xl text-cyan-400 bg-slate-900 mb-3'>{title}</h2>
             <h3 className='text-3xl'>For <b>{years}</b> Year{years > 1 && 's'}</h3>

@@ -59,7 +59,6 @@ export const homeSectionsContent = [
     },
 ];
 
-
 export const loans = [
     {
         id: 4001,
@@ -81,5 +80,40 @@ export const loans = [
         years: 10,
         interest: 2.5,
         img: '/assets/img/gold.svg'
+    },
+]
+
+export const team = [
+    {
+        id: 5001,
+        name: 'Arik',
+        position: 'Founder & CEO',
+        img: 'https://res.cloudinary.com/arikxl/image/upload/v1691237820/Ella2023/qynmcguahbfziwgtcp47.jpg',
+        email: 'arikxl@gmail.com',
+        funFacts:'Father of two aliens. A failed stand-up comedian. A football manager legend.'
+    },
+    {
+        id: 5002,
+        name: 'Danielle',
+        position: 'Marketing Magician',
+        img: 'https://res.cloudinary.com/arikxl/image/upload/v1691239150/Ella2023/edozp5rgqgrknpekfqza.jpg',
+        email: 'loola@xlbank.com',
+        funFacts:"The animal whisperer. Cool guitarist. Made 100% of chocolate. Still don't know she's adopted."
+    },
+    {
+        id: 5003,
+        name: 'Yehonatan',
+        position: 'Cybersecurity Wizard',
+        img: 'https://res.cloudinary.com/arikxl/image/upload/v1691239172/Ella2023/vutb3gwrfyxbzxffvows.jpg',
+        email: 'hacker@xlbank.com',
+        funFacts:'Parkourist gamer. A lego master builder. Has a million dollar smile. Escaped from a madhouse.'
+    },
+    {
+        id: 5004,
+        name: 'Ogry',
+        position: 'Guard Sorcerer',
+        img: 'https://res.cloudinary.com/arikxl/image/upload/v1691239193/Ella2023/ah3h1xsavunhlodcsqbb.jpg',
+        email: 'evil@xlbank.com',
+        funFacts:'Sinister hamster, sweet eyes, wicked grin, sharp claws, malevolence wrapped in innocent fur. Beware its darkness.'
     },
 ]

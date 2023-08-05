@@ -38,6 +38,39 @@ html{
  @apply  py-10
 }
 
+
+.member:nth-child(even){
+  align-self: end;
+  flex-direction: row-reverse;
+  
+}
+
+.member:hover {
+    box-shadow: 0 0 5px #22D3EE,
+              0 0 20px #22D3EE,
+              0 0 50px #22D3EE,
+              0 0 100px #22D3EE;
+}
+
+.member img{
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+.member img{
+  filter: grayscale(200);
+}
+.member:hover img{
+  filter: grayscale(0);
+}
+
+/* .pic{
+  min-width: 100px;
+  min-height: 100px;
+} */
+
 /* .switch:nth-child(2){
   
   
