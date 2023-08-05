@@ -17,12 +17,6 @@ export default function Home() {
         {homeSectionsContent.map((sec, index) => (
           <HomeSection key={sec.id} section={sec} index={index } />
         ))}
-        {/* <HomeSection  />
-        <HomeSection /> */}
-      {/* <CryptoHomeSection />
-      <CreditHomeSection />
-      <LoanHomeSection /> */}
-        {/* <AboutSection/> */}
         <LoanHomeSection />
     </main>
     </>

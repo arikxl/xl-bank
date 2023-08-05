@@ -66,20 +66,20 @@ export const loans = [
         title: 'TINY',
         years: 1,
         interest: 10,
-        img: '/assets/img/data.svg'
+        img: '/assets/img/coins.svg'
     },
     {
         id: 4002,
         title: 'MID',
         years: 5,
-        interest: 7,
-        img: '/assets/img/data.svg'
+        interest: 6.33,
+        img: '/assets/img/bills.svg'
     },
     {
         id: 4003,
         title: 'HUGE',
         years: 10,
         interest: 2.5,
-        img: '/assets/img/data.svg'
+        img: '/assets/img/gold.svg'
     },
 ]
