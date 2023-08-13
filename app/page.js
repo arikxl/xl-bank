@@ -22,6 +22,7 @@ export default function Home() {
         ))}
         <LoanHomeSection />
         <HomeTeamSection />
+        <HomeSection section={homeSectionsContent[1]} index={1 } />
     </main>
     </>
   )

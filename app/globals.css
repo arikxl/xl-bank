@@ -40,8 +40,12 @@ html{
 .member:nth-child(even){
   align-self: end;
   flex-direction: row-reverse;
-  
 }
+.member:nth-child(even) .op{
+  flex-direction: row-reverse;
+}
+
+
 
 .member:hover {
     box-shadow: 0 0 5px #22D3EE,
