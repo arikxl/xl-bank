@@ -29,7 +29,7 @@ html{
 }
 
 
-.home-section:nth-child(3) .switch{
+.home-section:nth-child(3) {
  @apply flex-row-reverse
 }
 .home-section:nth-child(4) .coll{
@@ -63,7 +63,12 @@ html{
 .member:hover img{
   filter: grayscale(0);
 }
-
+.member-link:hover {
+    text-shadow: 0 0 5px #22D3EE,
+              0 0 20px #22D3EE,
+              0 0 50px #22D3EE,
+              0 0 100px #22D3EE;
+}
 /* .pic{
   min-width: 100px;
   min-height: 100px;

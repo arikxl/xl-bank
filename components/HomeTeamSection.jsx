@@ -44,7 +44,7 @@ const HomeTeamSection = () => {
                     ))}
                 </div>
                 <Link href="/about">
-                    <h3 className='font-bold text-3xl text-center'>Contact Us</h3>
+                    <h3 className='member-link font-bold text-3xl text-center hover:underline transition duration-400'>Contact Us</h3>
                 </Link>
 
             </div>

@@ -1,8 +1,8 @@
 import './btn-home-section.css';
 
-const BtnHomeSection = ({ text }) => {
+const BtnHomeSection = ({ text,width }) => {
   return (
-    <button id="BtnHomeSection">
+    <button id="BtnHomeSection" className={width }>
           {text}
       </button>
   )
