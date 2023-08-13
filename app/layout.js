@@ -1,4 +1,4 @@
-// 'use client'
+'use client'
 
 import AppHeader from '@/components/AppHeader'
 import './globals.css'
@@ -23,7 +23,8 @@ const rubik = Rubik({
 
 export default function RootLayout({ children }) {
 
-  const [showHeader, setShowHeader] = useState(false);
+  // const [showHeader, setShowHeader] = useState(false);
+  const showHeader = false;
 
   return (
     <html lang="en" >
