@@ -1,16 +1,13 @@
 'use client'
 
 import Link from "next/link"
-import { useEffect, useState } from "react"
-import SideBar from "./SideBar"
+import { useEffect, useState } from "react";
+
 import Logo from "./Logo"
-import { headerNavLinks } from "@/data/data"
-import BtnPrm from "./btns/btnLogin/BtnLogin"
-import HeaderUserStats from "./HeaderUserStats"
+import SideBar from "./SideBar"
 import BtnLogin from "./btns/btnLogin/BtnLogin"
-
-
-
+import HeaderUserStats from "./HeaderUserStats"
+import { headerNavLinks } from "@/data/data"
 
 
 const AppHeader = ({ showHeader }) => {
@@ -46,13 +43,9 @@ const AppHeader = ({ showHeader }) => {
   }, [])
 
 
-
-
-
-
   return (
     <>
-      <header className={` flex flex-col    h-12   sticky  top-0 z-50
+      <header className={` flex flex-col h-12  sticky  top-0 z-50
             
     `}>
         <div className={`flex font-bold items-center py-2 ease-out transform duration-500
@@ -73,10 +66,8 @@ const AppHeader = ({ showHeader }) => {
                 </Link>
               ))}
             </ul>
-            <Link href='/login'>
-              {/* <button className='hidden sm:block'> */}
+            <Link href='/login' className='hidden sm:block'>
               <BtnLogin text='Login'/>
-              {/* </button> */}
             </Link>
             <button className='sm:hidden' onClick={() => setIsSideBarShow(true)}>
               X

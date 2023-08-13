@@ -25,12 +25,10 @@ html{
 }
 
 .home-section{
-  @apply bg-slate-800 text-white h-[85vh]  items-center flex
+  @apply odd:bg-[#E5E7EB] odd:text-black bg-slate-800 text-white h-[100vh] sm:h-[85vh]  items-center flex
 }
 
-.home-section:nth-child(3){
-  @apply bg-[#E5E7EB] text-black h-[85vh] items-center flex 
-}
+
 .home-section:nth-child(3) .switch{
  @apply flex-row-reverse
 }

@@ -12,9 +12,9 @@ const Hero = () => {
         />
       </div>
       <div className='z-10  text-center  text-white mt-12'>
-        <h1 className=' text-6xl font-bold mb-10'>Welcome to our &#x20BF;ank </h1>
-        <p className='mb-0 text-2xl '>Sign up and receive <strong>$1,000,000</strong> to invest in crypto</p>
-        <p className='mb-16 text-2xl'>Design your credit cards and have fun!</p>
+        <h1 className='text-5xl sm:text-6xl font-bold mb-10'>Welcome to our &#x20BF;ank </h1>
+        <p className='mb-0 text-xl sm:text-2xl '>Sign up and receive <strong>$1,000,000</strong> to invest in crypto</p>
+        <p className='mb-12 sm:mb-16 text-xl sm:text-2xl'>Design your credit cards and have fun!</p>
         <BtnPrm />
       </div>
     </section>

@@ -8,10 +8,10 @@ import HeaderUserStats from '@/components/HeaderUserStats'
 import { Metadata } from 'next'
 
 // 
-// export const metadata = {
-//   title: 'xlBank',
-//   description: 'Arik Alexandrov',
-// }
+export const metadata = {
+  title: 'xlBank',
+  description: 'Arik Alexandrov',
+}
 
 const rubik = Rubik({
   subsets: ['latin'],
