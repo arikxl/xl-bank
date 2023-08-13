@@ -5,12 +5,13 @@ import AppFooter from '@/components/AppFooter'
 import { Rubik } from 'next/font/google'
 import HeaderUserStats from '@/components/HeaderUserStats'
 // import { useState } from 'react'
+import { Metadata } from 'next'
 
 // 
-export const metadata = {
-  title: 'xlBank',
-  description: 'Arik Alexandrov',
-}
+// export const metadata = {
+//   title: 'xlBank',
+//   description: 'Arik Alexandrov',
+// }
 
 const rubik = Rubik({
   subsets: ['latin'],

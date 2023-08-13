@@ -8,6 +8,11 @@ import { homeSectionsContent } from "@/data/data";
 import LoanHomeSection from "@/components/LoanHomeSection";
 import HomeTeamSection from "@/components/HomeTeamSection";
 
+export const metadata = {
+  title: 'xlBank',
+  description: 'Arik Alexandrov',
+}
+
 export default function Home() {
   return (
     <>
