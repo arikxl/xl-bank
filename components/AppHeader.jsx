@@ -21,7 +21,7 @@ const AppHeader = ({ showHeader }) => {
   useEffect(() => {
 
     const changeNav = () => {
-      if (window.scrollY > 100) setIsScroll(true);
+      if (window.scrollY > 50) setIsScroll(true);
       else setIsScroll(false)
     }
     window.addEventListener('scroll', changeNav);

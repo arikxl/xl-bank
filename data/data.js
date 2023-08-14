@@ -7,7 +7,7 @@ export const headerNavLinks = [
     {
         id: 11,
         title: 'Crypto',
-        linkTo:'#crypto'
+        linkTo:'/crypto'
     },
     {
         id: 12,
@@ -39,7 +39,9 @@ export const homeSectionsContent = [
         title: 'Manage your Money',
         subTitle: 'Controlling your fortune is extremely easy',
         desc: 'User-friendly interface for smooth asset management. Track crypto investments and monitor account balances, empowering you to make decisions swiftly and efficiently.',
-        btnText: "Let's start"
+        btnText: "Let's start",
+        linkTo: '/dashboard'
+
     },
     {
         id: 3002,
@@ -47,7 +49,8 @@ export const homeSectionsContent = [
         title: 'Crypto World',
         subTitle: 'Access the latest info and start your trading journey',
         desc: "Buy or sell bitcoin and other cryptocurrencies with confidence on the world's most secure crypto trade app. we are committed to your transactions protection.",
-        btnText: 'Invest Today'
+        btnText: 'Invest Today',
+        linkTo: '/crypto'
     },
     {
         id: 3003,
@@ -55,7 +58,9 @@ export const homeSectionsContent = [
         title: 'Fashionable Finances',
         subTitle: 'Elevate your spending with stylish credit cards',
         desc: 'Make a statement with elegance designs for your wallet. Be imaginative & unique like a true artist. Like others cards and get ranked for your creative ideas.',
-        btnText: 'Express Your Style'
+        btnText: 'Express Your Style',
+        linkTo: '/credit'
+
     },
 ];
 

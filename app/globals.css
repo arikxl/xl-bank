@@ -45,8 +45,6 @@ html{
   flex-direction: row-reverse;
 }
 
-
-
 .member:hover {
     box-shadow: 0 0 5px #22D3EE,
               0 0 20px #22D3EE,
@@ -73,13 +71,24 @@ html{
               0 0 50px #22D3EE,
               0 0 100px #22D3EE;
 }
-/* .pic{
-  min-width: 100px;
-  min-height: 100px;
-} */
 
-/* .switch:nth-child(2){
-  
-  
-} */
+.user-stats{
+  animation: scroll-left 20s linear infinite;
+}
 
+.green{
+  background-color: green;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(100%); /* Start from the right edge */
+  }
+  100% {
+    transform: translateX(-100%); /* End at the left edge */
+  }
+}
+
+.page-style{
+  @apply bg-slate-700 text-white min-h-[100vh] mt-[-3rem] pt-[10rem] z-10
+}

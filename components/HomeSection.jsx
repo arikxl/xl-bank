@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 const AboutSection = ({ section, index }) => {
 
-    const { img, title, subTitle, desc, btnText } = section;
+    const { img, title, subTitle, desc, btnText, linkTo } = section;
 
     return (
         <section className=' home-section '>
@@ -21,7 +21,7 @@ const AboutSection = ({ section, index }) => {
                 <div className=' flex-1 flex flex-col sm:flex-row justify-center items-center'>
                     <Image src={img} width={400} height={400} alt={title} loading='lazy' />
                 </div>
-                <Link href="/crypto" className='sm:hidden'>
+                <Link href={linkTo } className='sm:hidden'>
                     <BtnHomeSection text={btnText} width='w-full' />
                 </Link>
 
