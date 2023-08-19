@@ -122,3 +122,14 @@ export const team = [
         funFacts:'Sinister hamster, sweet eyes, wicked grin, sharp claws, malevolence wrapped in innocent fur. Beware its darkness.'
     },
 ]
+
+export const responsiveCarousel = {
+        0: {
+            items: 2,
+        },
+        512: {
+            items: 4,
+
+        }
+
+}
