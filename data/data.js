@@ -131,5 +131,4 @@ export const responsiveCarousel = {
             items: 4,
 
         }
-
 }

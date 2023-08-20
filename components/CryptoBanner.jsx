@@ -20,13 +20,12 @@ const CryptoBanner = () => {
         setTrending(data)
     }
 
-    useEffect(() => {
-        fetchTrendingCoins()
-    }, [])
+    // useEffect(() => {
+    //     fetchTrendingCoins()
+    // }, [])
 
     const items = trending?.map((coin) => {
         const profit = coin?.price_change_percentage_24h >= 0;
-        console.log('coin?.price_change_percentage_24h:', coin.price_change_percentage_24h)
         return (
             <Link href={`/crypto/${coin.id}`} key={coin.id}
                 className='flex flex-col items-center'>
