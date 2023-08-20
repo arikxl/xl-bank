@@ -14,11 +14,11 @@ const CryptoPagination = ({ page, setPage, handleSearch }) => {
                     {x + 1}
                 </button>
             ))}
-            <button disabled={page > 9} onClick={() => setPage(page + 1)}
-                className={page > 9 && 'cursor-not-allowed'}>
+            <button disabled={page >= Math.ceil(handleSearch().length / 10)} onClick={() => setPage(page + 1)}
+                className={` text-cyan-400 ${page >= Math.ceil(handleSearch().length / 10) && 'cursor-not-allowed'}`}>
                 ▶️
             </button>
-
+   
         </div>
     )
 }

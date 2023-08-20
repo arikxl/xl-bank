@@ -8,6 +8,8 @@ import SideBar from "./SideBar"
 import BtnLogin from "./btns/btnLogin/BtnLogin"
 import HeaderUserStats from "./HeaderUserStats"
 import { headerNavLinks } from "@/data/data"
+import BtnSideBar from "./btns/btnSideBar/BtnSideBar";
+import BtnNewLogin from "./btns/btnNewLogin/BtnNewLogin";
 
 
 const AppHeader = ({ showHeader }) => {
@@ -16,7 +18,7 @@ const AppHeader = ({ showHeader }) => {
   const [isScroll, setIsScroll] = useState(false);
   const [section, setSection] = useState(0);
 
-  const[user] = useState(true)
+  const [user] = useState(true)
 
   useEffect(() => {
 
@@ -47,10 +49,10 @@ const AppHeader = ({ showHeader }) => {
     <>
       <header className={` flex flex-col h-12  sticky  top-0 z-50
             
-    `}>
+            `}>
         <div className={`flex font-bold items-center py-2 ease-out transform duration-500
         ${isScroll || showHeader ? ' bg-slate-900 text-cyan-400' : 'text-white bg-transparent'}
-  
+        
         `}>
 
           {isSideBarShow && (<SideBar setIsSideBarShow={setIsSideBarShow} isSideBarShow={isSideBarShow} />)}
@@ -67,16 +69,18 @@ const AppHeader = ({ showHeader }) => {
               ))}
             </ul>
             <Link href='/login' className='hidden sm:block'>
-              <BtnLogin text='Login'/>
+              {/* <BtnLogin text='Login'/> */}
+              <BtnNewLogin />
             </Link>
-            <button className='sm:hidden' onClick={() => setIsSideBarShow(true)}>
+            <button className='sm:hidden' onClick={() => setIsSideBarShow(!isSideBarShow)} >
+              {/* <BtnSideBar isSideBarShow={isSideBarShow} /> */}
               X
             </button>
 
           </nav >
         </div>
-        {user && (<HeaderUserStats showHeader={showHeader} isScroll={isScroll} isSideBarShow={isSideBarShow } />)}
-     
+        {user && (<HeaderUserStats showHeader={showHeader} isScroll={isScroll} isSideBarShow={isSideBarShow} />)}
+
 
       </header>
 

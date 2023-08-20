@@ -62,7 +62,7 @@ const CryptoCoinsTable = () => {
                     : (coins.length > 0 && (
 
                         <table className='w-full table-fixed	'>
-                            <thead className='bg-cyan-400 h-28 text-xl '>
+                            <thead className='bg-cyan-400 h-24 text-xl '>
                                 <tr>
                                     <th>Coin</th>
                                     <th>Price</th>
@@ -70,7 +70,7 @@ const CryptoCoinsTable = () => {
                                     <th>Market Cap</th>
                                 </tr>
                             </thead>
-                            <tbody className='w-full text-center'>
+                            <tbody className='w-full h-24 text-center'>
                                 {handleSearch()
                                     .slice((page - 1) * 10, (page - 1) * 10 + 10)
                                     .map((coin) => {

@@ -1,0 +1,83 @@
+.switch11 input {
+  display: none;
+}
+
+.button11 {
+  position: relative;
+  background-image: linear-gradient(#ffffff 33%,#414751 58%,#837b52,#c5baa1,#c3adaa);
+  border-radius: 50px;
+  padding: 6px;
+  border: none;
+  outline: none;
+  box-shadow: 0.1em 0 0 #2726267f inset, -0.1em 0 0 #27262600 inset, 0 0.1em 0 #afa490 inset, 0 -0.1em 0 #ffffff3f, 0 0.2em 0.5em #0000007f, 0 -0.1em 0 #151616 inset, -0.1em -0.2em 0 #ffffff7f inset;
+  cursor: pointer;
+  width: 3rem;
+  height: 3rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .3s ease-in-out;
+}
+
+.button11::before {
+  position: absolute;
+  content: "";
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: inherit;
+  background-color: #606060;
+  z-index: -1;
+  transition: background-image .3s ease-in-out;
+}
+
+.button11 .icon11 {
+  width: 3rem;
+  height: 3rem;
+  display: inline-block;
+}
+
+.button11 .icon11 svg {
+  height: 100%;
+  width: 100%;
+  fill: #000000;
+  transition: fill;
+}
+
+.switch11 input:checked + .button11::before {
+  background-image: rgb(77, 124, 255);
+  animation: anime1 .3s linear alternate-reverse infinite;
+}
+.switch11 input:hover + .button11::before {
+  background-image: #22D3EE;
+  animation: anime1 .3s linear alternate-reverse infinite;
+}
+
+.switch11 input:checked + .button11 {
+  box-shadow: none;
+}
+
+.switch11 input:checked + .button11 .icon11 svg {
+  fill: rgb(77, 124, 255);
+  animation: anime2 .3s linear alternate-reverse infinite;
+}
+.switch11:hover  svg {
+  fill: #22D3EE;
+  animation: anime2 .3s linear alternate-reverse infinite;
+}
+
+
+@keyframes anime1 {
+  to {
+    background-color: rgb(77, 124, 255);
+  }
+}
+
+@keyframes anime2 {
+  to {
+    fill: rgba(77, 124, 255, 0.642);
+  }
+}
