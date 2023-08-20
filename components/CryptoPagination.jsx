@@ -2,7 +2,7 @@ import React from 'react'
 
 const CryptoPagination = ({ page, setPage, handleSearch }) => {
     return (
-        <div className="flex mx-auto w-1/2 justify-between my-2 text-xl">
+        <div className="flex mx-auto  sm:w-1/2 justify-between my-2 text-xl">
             <button disabled={page < 2} onClick={() => setPage(page - 1)}
                 className={page < 2 && 'cursor-not-allowed'}>
                 ◀️

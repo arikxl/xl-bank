@@ -21,7 +21,7 @@ const nextConfig = {
         ]
     },
        images: {
-        domains:['res.cloudinary.com', 'assets.coingecko.com']
+        domains:['res.cloudinary.com', 'assets.coingecko.com', 't3.ftcdn.net']
     }
 }
 

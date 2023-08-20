@@ -132,3 +132,35 @@ export const responsiveCarousel = {
 
         }
 }
+
+export const tempCoins = [
+        {
+            id: 1001,
+            price_change_percentage_24h: 23,
+            name: 'temp',
+            symbol: 'tmp',
+            image: 'https://t3.ftcdn.net/jpg/02/48/42/64/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg',
+            current_price: 200,
+            market_cap: 2343432432
+        },
+        {
+            id: 1002,
+            price_change_percentage_24h: 111,
+            name: 'arik',
+            symbol: 'ark',
+            image: 'https://t3.ftcdn.net/jpg/02/48/42/64/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg',
+
+            current_price: 23,
+            market_cap: 87368752
+        },
+        {
+            id: 10013,
+            price_change_percentage_24h: -353,
+            name: 'ogry',
+            image: 'https://t3.ftcdn.net/jpg/02/48/42/64/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg',
+
+            symbol: 'ogr',
+            current_price: 1,
+            market_cap: 1234567890
+        },
+]

@@ -94,3 +94,5 @@ html{
 .page-style{
   @apply bg-slate-700 text-white min-h-[100vh] mt-[-3rem] pt-[6.5rem]  sm:pt-[9%] z-10
 }
+
+

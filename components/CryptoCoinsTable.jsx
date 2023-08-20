@@ -6,6 +6,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react'
 import CryptoPagination from './CryptoPagination';
+import { tempCoins } from '@/data/data';
 
 const CryptoCoinsTable = () => {
 
@@ -21,37 +22,47 @@ const CryptoCoinsTable = () => {
         setLoading(false)
     }
 
-    // useEffect(() => {
-    //     setLoading(true);
-    //     fetchTrendingCoins()
-    // }, [])
+ 
+
+    useEffect(() => {
+        // setLoading(true);
+        // fetchTrendingCoins()
+        setCoins(tempCoins)
+    }, [])
+
+    const handleChange = (e) => {
+        setSearch(e.target.value);
+        setPage(1)
+    }
 
     const handleSearch = () => {
-        // return 100
         return coins.filter((coin) => (
             coin.name.toLowerCase().includes(search.toLowerCase()) ||
             coin.symbol.toLowerCase().includes(search.toLowerCase())
         ))
     }
 
+    const handleCoinClick = (id) => {
+        window.location = `/crypto/${id}`
+    }
 
     return (
         <div className='py-6'>
-            {/* CryptoCoinsTable<mark>{coins.length}</mark> */}
             <>
                 <h1 className='text-center text-2xl mb-4'>Cryptocurrency Prices by Market Cap</h1>
                 <input type='text' placeholder='Search a Crypto Currency...'
                     className='w-full px-6 py-4 text-slate-800 mb-6 rounded-lg'
-                    onChange={(e) => setSearch(e.target.value)}
+                    onChange={(e) => handleChange(e)}
                 />
                 {handleSearch() && handleSearch().length > 0 &&
                     (<CryptoPagination page={page} setPage={setPage} handleSearch={handleSearch} />)
                 }
                 {loading
                     ? <h1>LOADING...</h1>
-                    : (
+                    : (coins.length > 0 && (
+
                         <table className='w-full table-fixed	'>
-                            <thead className='bg-cyan-400 h-16 text-xl'>
+                            <thead className='bg-cyan-400 h-28 text-xl '>
                                 <tr>
                                     <th>Coin</th>
                                     <th>Price</th>
@@ -65,11 +76,10 @@ const CryptoCoinsTable = () => {
                                     .map((coin) => {
                                         const profit = coin.price_change_percentage_24h > 0;
                                         return (
-                                            // <Link href={`/crypto/${coin.id}`} className='w-full' key={coin.id}>
-                                            <tr key={coin.id}
-                                                className=' py-1 w-full  border-b border-white'>
+                                            <tr key={coin.id} onClick={() => handleCoinClick(coin.id)}
+                                                className=' py-1 w-full cursor-pointer border-b border-white hover:bg-slate-400'>
                                                 <td className='flex-col py-2'>
-                                                    <Image src={coin?.image} alt={coin.name} width={50} height={50} className='mx-auto'/>
+                                                    <Image src={coin?.image} alt={coin.name} width={50} height={50} className='mx-auto' />
                                                     <h3 className='uppercase font-semibold'>{coin.symbol}</h3>
                                                     <p className='text-gray-300'>{coin.name}</p>
                                                 </td>
@@ -79,12 +89,11 @@ const CryptoCoinsTable = () => {
                                                 </td>
                                                 <td>{numberWithCommas(coin.market_cap.toString().slice(0, -6))}M</td>
                                             </tr>
-                                            // </Link>
                                         )
                                     })}
                             </tbody>
                         </table>
-
+                    )
                     )
                 }
                 {handleSearch() && handleSearch().length > 0 &&
