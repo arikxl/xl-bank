@@ -75,7 +75,7 @@ const AppHeader = ({ showHeader }) => {
 
           </nav >
         </div>
-        {user && (<HeaderUserStats showHeader={showHeader} isScroll={isScroll} />)}
+        {user && (<HeaderUserStats showHeader={showHeader} isScroll={isScroll} isSideBarShow={isSideBarShow } />)}
      
 
       </header>

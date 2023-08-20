@@ -2,6 +2,7 @@
 
 import Link from "next/link"
 import Logo from "./Logo"
+import SocialIcons from "./SocialIcons"
 
 
 const AppFooter = () => {
@@ -36,9 +37,7 @@ const AppFooter = () => {
           <Logo/>
           </Link>
           <small>all rights...</small>
-          <div>
-            socail icons
-          </div>
+          <SocialIcons/>
         </div>
       </div>
     </footer >
