@@ -21,7 +21,7 @@ export const headerNavLinks = [
     },
     {
         id: 14,
-        title: 'The Team',
+        title: 'The Family',
         linkTo:'#about'
     },
     {

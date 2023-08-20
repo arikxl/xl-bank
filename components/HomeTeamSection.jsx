@@ -8,26 +8,22 @@ const TeamMember = ({ member, idx }) => {
 
     return (
         <div className='w-[90%] sm:w-[60%] py-2 flex member rounded-lg border-2  hover:border-cyan-400 '>
-            <div className={`flex flex-col   sm:flex-row gap-2   ${idx % 2 === 0 && 'flex-row-reverse'} p-2`}>
-                <div className='flex justify-center gap-6 op '>
-                    {/* <div className=' min-w-[100px] h-[100px] border-cyan-400 border-[6px] rounded-full overflow-hidden '>
-                        <Image alt={name} src={img} width={500} height={500} className='' />
-                    </div> */}
-
+            <div className={`flex flex-col    gap-2   ${idx % 2 === 0 && 'flex-row-reverse'} p-2`}>
+                <div className={`flex justify-center gap-6 ${idx % 2 === 0 && ' flex-row-reverse'}`}>
                     <div className=' min-w-[75px] h-[75px] border-cyan-400 border-[6px] rounded-full overflow-hidden '>
                         <Image alt={name} src={img} width={200} height={200} className='' />
                     </div>
                     <div className='flex justify-between '>
-                        <div className='flex flex-col justify-center sm:items-end font-bold'>
+                        <div className='flex flex-col   justify-center  font-bold'>
                             <h3 className='text-xl sm:text-2xl text-cyan-400 '>{name}</h3>
-
-                            <h3>{position}</h3>
-                            <Link href="mailto:arikxl@gmail.com" className='underline sm:text-center block '>
+                            <h3 className=''>{position}</h3>
+                            <Link href="mailto:arikxl@gmail.com" className='underline sm:text-center block sm:hidden'>
                                 <code>{email}</code>
                             </Link>
                         </div>
                     </div>
                 </div>
+                
                 <div className='text-center'>
                     <i className=' text-center'>{funFacts}</i>
                 </div>

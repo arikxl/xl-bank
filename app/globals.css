@@ -43,7 +43,7 @@ html{
   align-self: end;
   flex-direction: row-reverse;
 }
-.member:nth-child(even) .op{
+.member:nth-child(even) {
   flex-direction: row-reverse;
 }
 
