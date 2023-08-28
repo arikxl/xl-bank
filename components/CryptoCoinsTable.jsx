@@ -25,9 +25,9 @@ const CryptoCoinsTable = () => {
  
 
     useEffect(() => {
-        // setLoading(true);
-        // fetchTrendingCoins()
-        setCoins(tempCoins)
+        setLoading(true);
+        fetchTrendingCoins()
+        // setCoins(tempCoins)
     }, [])
 
     const handleChange = (e) => {
